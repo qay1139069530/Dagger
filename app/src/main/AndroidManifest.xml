@@ -3,11 +3,12 @@
     package="com.qay.qbase.dagger">
 
     <application
+        android:name=".app.DApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/QBaseTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SingletonActivity" />
+        <activity android:name=".ScopeActivity" />
+        <activity android:name=".NamedActivity" />
     </application>
 
 </manifest>

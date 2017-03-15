@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/qbase_title_viewstub" />
+
+    <Button
+        android:id="@+id/act_main_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="normal" />
+
+    <Button
+        android:id="@+id/act_main_test02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Singleton" />
+
+    <Button
+        android:id="@+id/act_main_test03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scope" />
+
+    <Button
+        android:id="@+id/act_main_test04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Named" />
+
+    <Button
+        android:id="@+id/act_main_test05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qualified" />
+
+
+</LinearLayout>
