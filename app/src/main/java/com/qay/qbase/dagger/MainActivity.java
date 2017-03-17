@@ -66,7 +66,18 @@ public class MainActivity extends QActivity implements IMainView {
             }
         });
 
-
+        findViewById(R.id.act_main_test05).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, QualifiedActivity.class));
+            }
+        });
+        findViewById(R.id.act_main_test06).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TestActivity.class));
+            }
+        });
     }
 
 

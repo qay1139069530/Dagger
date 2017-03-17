@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import com.qay.qbase.dagger.app.DApp;
 import com.qay.qbase.dagger.module.NamedModule;
+import com.qay.qbase.dagger.module.QualifiedModule;
 import com.qay.qbase.dagger.presenter.NamedPresenter;
 import com.qay.qbase.dagger.presenter.QualifiedPresenter;
 import com.qay.qbase.dagger.view.IMainView;
@@ -28,12 +29,13 @@ public class QualifiedActivity extends QActivity implements IMainView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_named);
 
-        initToolbar("Named");
+        initToolbar("Qualified");
         initStatusColor();
 
         DApp dApp = (DApp) getApplication();
 
 
+        DaggerQualifiedComponent.builder().qualifiedModule(new QualifiedModule(this)).build().inject(this);
 
         findViewById(R.id.act_named_test).setOnClickListener(new View.OnClickListener() {
             @Override

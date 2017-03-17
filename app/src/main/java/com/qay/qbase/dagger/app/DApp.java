@@ -8,13 +8,19 @@ import com.qay.qbase.app.QApp;
 
 public class DApp extends QApp {
 
+    public static DApp instatnce;
+
+    public static DApp getInstatnce(){
+        return instatnce;
+    }
+
 
     AppComponent appComponent;
 
     @Override
     public void onCreate() {
         super.onCreate();
-
+        instatnce = this;
         appComponent = DaggerAppComponent.builder()
                 .httpModule(new HttpModule())
                 .appModule(new AppModule(this))

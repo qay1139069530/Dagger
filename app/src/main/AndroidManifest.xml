@@ -20,6 +20,9 @@
         <activity android:name=".SingletonActivity" />
         <activity android:name=".ScopeActivity" />
         <activity android:name=".NamedActivity" />
+        <activity android:name=".QualifiedActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Test02Activity" />
     </application>
 
 </manifest>
